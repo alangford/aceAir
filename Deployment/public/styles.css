@@ -1,0 +1,135 @@
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.line {border-bottom: solid black 2px;
+    padding-bottom: 3vh;
+}
+.buttons{
+    background-color: transparent;
+    border: solid 1px black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
+.parallaxParent {
+    height: 50vh;
+    overflow: hidden;
+}
+.parallaxParent > * {
+    height: 200%;
+    position: relative;
+    top: -100%;
+}
+footer{
+    margin-top: 3vh;
+    border-top: solid black 2px;
+    padding: 10vh 0;
+}
+
+
+.fred {
+    font-family: 'IM Fell English SC', serif;
+    font-size: 20px;
+
+}
+.petit{
+    font-family: 'Marcellus SC', serif;
+}
+.extraPad{
+    padding: 1vh 3vw;
+}
+
+
+
+.view-animate {
+    padding:10px;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s;
+
+    display:block;
+    width:100%;
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:10px;
+}
+
+.view-animate.ng-enter {
+    animation: slideInUp 0.2s both ease-in;
+    z-index: 8888;
+}
+
+.view-animate.ng-leave.ng-leave-active {
+    animation: slideOutLeft 0.2s both ease-in; z-index: 9999;
+}
+
+@media screen and (max-width: 470px) {
+    .view-animate.ng-enter, .view-animate.ng-leave {
+        transition:none;
+
+    }
+
+    .view-animate.ng-enter {
+        animation:none;
+    }
+
+    .view-animate.ng-leave.ng-leave-active {
+        animation:none;
+    }
+
+}
+
+
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
