@@ -5,8 +5,21 @@
 .line {border-bottom: solid black 2px;
     padding-bottom: 3vh;
 }
+.doubleLine{
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+}
 .buttons{
     background-color: transparent;
+    border: solid 1px black;
+}
+.buttons:hover{
+    cursor: pointer;
+    background-color: #ebebeb;
     border: solid 1px black;
 }
 a{

@@ -12,7 +12,7 @@ const cachebust = new CacheBuster();
 
 gulp.task('build-js', [], function() {
     return gulp.src(['public/app.js','public/mainServices.js', `public/homeView/homeCtrl.js`,`public/aboutMeView/aboutCtrl.js`,
-        `public/appointment/appointementCtrl.js`, `public/contactView/contactCtrl.js`])
+         `public/contact/contactCtrl.js`])
         .pipe(sourcemaps.init())
         .pipe(print())
         .pipe(babel({ presets: ['es2015'] }))

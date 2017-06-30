@@ -1,15 +1,16 @@
 <div ng-controller="homeCtrl">
-    <div id="parallax1" class="parallaxParent">
-        <div style="background-image: url('../assets/images/clouds-background-13.jpg');"></div>
-    </div>
-    <div class="spacer s1">
 
+        <div id="parallax1" class="parallaxParent doubleLine">
+            <div style="background-image: url('../assets/images/clouds-background-13.jpg');"></div>
+        </div>
 
-        <div class="col-lg-12 line">
+    <div class="spacer s1 container doubleLine">
+        <div class="col-lg-12 ">
         </div>
 
         <div class="col-lg-12 fred">
             <h1 class="text-center">Welcome</h1>
+            <hr>
             <p class="text-center">
                 <strong>Ace Air Conditioning and Heating LLC</strong>
                 a leading full service Residential Air Conditioning and Heating Contractor
@@ -24,14 +25,30 @@
             </p>
         </div>
     </div>
-    <div id="parallax2" class="parallaxParent">
-        <div style="background-image: url('../assets/images/mountains-1939660_960_720.jpg');"></div>
-    </div>
-    <div class="spacer s1">
 
+        <div id="parallax2" class="parallaxParent doubleLine">
+            <div style="background-image: url('../assets/images/mountains-1939660_960_720.jpg');"></div>
+        </div>
 
-        <div class="col-lg-12 line fred">
+    <div class="spacer s1 container">
+        <div class="col-lg-12 doubleLine fred">
+            <h1 class="text-center">Services</h1>
+            <hr>
+            <p>We are licensed and Insured in:</p>
+            <ul>
+                <li>AC & Furnace Replacement</li>
+                <li>AC & Furnace Repair</li>
+                <li>AC & Furnace Serviced</li>
+                <li>Swamp Coolers</li>
+                <li>Unit/Garage Heaters</li>
+                <li>Hot Water Heaters</li>
+                <li>Air Duct Cleaning</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-12 line fred container">
             <h1 class="text-center">Money Saving Tips</h1>
+            <hr>
             <p class="text-center">
                 <strong>
                     Check your filter every month, especially during heavy use months (winter and summer).
@@ -42,46 +59,44 @@
                 leading to expensive maintenance and/or early system failure.
             </p>
         </div>
-
-
-
-
     </div>
 
-
     <div class="col-lg-12" style="margin-top: 3vh">
-       <div class="col-lg-4">
-           <h3 >Art Thraen</h3><cite>Owner and founder of Ace Air and Heating</cite>
-           <img src="../assets/images/FullSizeRender.jpg" class="img-responsive">
-       </div>
+        <div class="col-lg-4 fred" style="margin-top: 3vh">
+            <h1 class="text-center">Contact</h1><br>
+            <h3 class="text-center">Office: <a href="tel:+1-801-943-1234">(801) 943-1234</a></h3>
+            <h3 class="text-center">Cell: <a href="tel:+1-801-716-0184">(801) 716-0184</a></h3>
+            <a target="_blank"  href="https://www.yelp.com/biz/ace-air-conditioning-and-heating-murray"><button class="btn center-block buttons col-sm-12" style="width: 100%">Yelp</button></a>
+            <a target="_blank" href="https://plus.google.com/113189561834620123331?hl=en"><button class="btn center-block buttons col-sm-12" style="width: 100%">Google+</button></a>
+            <a target="_blank" href="https://www.bbb.org/utah/business-reviews/heating-and-air-conditioning/ace-air-conditioning-heating-l-l-c-in-salt-lake-city-ut-15000611/bbb-accreditation"><button class="btn center-block buttons col-sm-12" style="width: 100%">Better Business Bureau</button></a>
+        </div>
+
         <div  class="col-lg-4" >
-            <h3 class="text-center">Map</h3>
+            <h3 class="text-center petit">Map</h3>
             {{initMap()}}
             <div id="map"style="height: 60vh"></div>
             <br>
-            <p>Address: <strong>360 W. 6100 So #A
-                SLC, UT. 84107</strong><br>Click <a href="https://www.google.co.in/maps/place/360+W+6100+S,+Murray,+UT+84107,+USA/@40.6388019,-111.9025053,17z/data=!3m1!4b1!4m5!3m4!1s0x8752899e94f934ad:0xbd903606766cab98!8m2!3d40.6388019!4d-111.9003166">Here</a> for Directions</p>
+            <p>Address: <strong>14570 S 1690 W, Riverton, UT 84065, USA</strong><br>Click <a target="_blank" href="https://www.google.com/maps/place/14570+S+1690+W,+Riverton,+UT+84065/@40.486567,-111.9416626,17z/data=!3m1!4b1!4m5!3m4!1s0x8752814e08cf47db:0x4f710070965b3c67!8m2!3d40.486567!4d-111.9394739">Here</a> for Directions</p>
         </div>
-       <div class="col-lg-4 fred" style="margin-top: 3vh">
-           <h1 class="text-center">Contact</h1><br>
-           <h3 class="text-center">Shop: <a href="tel:+1-801-943-1234">(801) 943-1234</a></h3>
-           <h3 class="text-center">Cell: <a href="tel:+1-801-716-0184">(801) 716-0184</a></h3>
-           <a target="_blank"  href="https://www.yelp.com/biz/ace-air-conditioning-and-heating-murray"><button class="btn center-block buttons extraPad">Yelp</button></a>
-           <a target="_blank" href="https://plus.google.com/113189561834620123331?hl=en"><button class="btn center-block buttons extraPad">Google+</button></a>
-           <a target="_blank" href="https://www.bbb.org/utah/business-reviews/heating-and-air-conditioning/ace-air-conditioning-heating-l-l-c-in-salt-lake-city-ut-15000611/bbb-accreditation"><button class="btn center-block buttons ">Better Business Bureau</button></a>
 
-       </div>
+        <div class="col-lg-4">
+            <h3 >Art Thraen</h3><cite>Owner and founder of Ace Air Conditioning and Heating</cite>
+            <img src="../assets/images/FullSizeRender.jpg" class="img-responsive">
+        </div>
+
    </div>
 
     <div class="col-lg-12">
+
         <footer  style="background-color: gainsboro">
             <div class="col-sm-6">
-                <p class="text-center">© copyright AceAirUtah.com 2016</p>
+                <p class="text-center petit">© copyright AceAirUtah.com 2016</p>
             </div>
             <div class="col-sm-6">
-                <p class="text-center petit">Developed and Designed by Andrew Langford</p>
+                <p class="text-center petit">Developed and Designed by <a href="https://github.com/bolty2142">Andrew Langford</a></p>
             </div>
         </footer>
+
     </div>
 </div>
 

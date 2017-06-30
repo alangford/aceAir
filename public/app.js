@@ -15,11 +15,8 @@ angular.module(`app`, [`ui.router`, `ngAnimate`,`ui.bootstrap`,`ngTouch`]).confi
 
         })
         .state(`contact`,{
-            templateUrl:`contactView/contactView.html`,
+            templateUrl:`contact/contactView.html`,
             url:`/contact`
         })
-        .state(`appointment`,{
-            templateUrl:`appointment/appointment.html`,
-            url:`/appointment`
-        })
+
 });

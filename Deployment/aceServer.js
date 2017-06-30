@@ -163,4 +163,4 @@ app.post(`/api/sendEmails`, (req,res) =>{
 
 
 
-app.listen(3042,()=>console.log(`server is listening on port 3042`))
+app.listen(3042,()=>console.log(`server is listening on port 3042`));

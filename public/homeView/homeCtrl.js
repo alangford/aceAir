@@ -1,6 +1,6 @@
 angular.module(`app`).controller(`homeCtrl`,($scope, $state)=>{
     $scope.initMap = () =>{
-        let uluru = {lat: 40.638802, lng: -111.900317};
+        let uluru = {lat: 40.4865670, lng: -111.9394740};
         let map = new google.maps.Map(document.getElementById("map"), {
             zoom: 15,
             center: uluru
